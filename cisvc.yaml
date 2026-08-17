@@ -1,0 +1,15 @@
+apiversion : v1
+Kind : Pod
+metadata :
+  name : mypod
+  labels : svc
+  app : myapp
+spec :
+  type : nodeport
+  selector :
+    app : myapp
+  Ports :
+  - name : nginx-Port
+  protocol : TCP
+  port: 80
+  targetPort : 80
