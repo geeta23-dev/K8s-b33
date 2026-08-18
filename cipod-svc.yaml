@@ -16,9 +16,9 @@ spec :
 
     ---
     apiVersion: v1
-    kind: Pod
+    kind: service
     metadata:
-      name: mypod
+      name: ci-pod
       labels:
         app: myapp
     spec:
@@ -30,4 +30,4 @@ spec :
         protocol:TCP
         port: 80
         targetPort: 80
-        
+      type: nodeport
