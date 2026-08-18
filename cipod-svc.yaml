@@ -1,9 +1,9 @@
-apiversion : v1
-Kind : Pod
-metadata :
-  name : mypod
-  labels : svc
-  app : myapp
+apiversion: v1
+Kind: Pod
+metadata:
+  name: mypod
+  labels: svc
+  app: myapp
 spec :
   type : nodeport
   selector :
