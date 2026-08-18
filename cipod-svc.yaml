@@ -27,7 +27,7 @@ spec :
         app: myapp
       ports:
       - name: nginx-Port
-        protocol:TCP
+        protocol: TCP
         port: 80
         targetPort: 80
       type: nodeport
