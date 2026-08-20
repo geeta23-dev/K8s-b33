@@ -6,15 +6,14 @@ metadata:
     app: myapp
 spec:
   tolerations:
-  - key: "prod"
-    operator: "Equal"
-    value: "true"
-    effect: "NoSchedule"
+    - key: "prod"
+      operator: "Equal"
+      value: "true"
+      effect: "NoSchedule"
   containers:
-    - name: nginx-container
+    - name: nginx-cont 
       image: nginx:latest
       ports:
         - containerPort: 80
   nodeSelector:
     type: db
-    
