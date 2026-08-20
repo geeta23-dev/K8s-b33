@@ -22,7 +22,7 @@ spec:
   type: NodePort
   selector:
     app: np
-  ports:
+  Ports:
   - name: tomcat-svc-port
     protocol: TCP
     targetPort: 8080
