@@ -13,7 +13,7 @@ spec:
       labels:
         app: daemon
     spec:
-      container:
+      containers:
         - name: daemon-container
           image: amazon/cloudwatch-agent
           ports:
