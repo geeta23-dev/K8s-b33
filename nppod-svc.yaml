@@ -26,4 +26,4 @@ spec:
   - name: tomcat-svc-port
     protocol: TCP
     targetPort: 8080
-    NodePort: 30001       
+    nodePort: 30001       
