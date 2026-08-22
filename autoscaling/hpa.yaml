@@ -1,0 +1,21 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: apache-hpa 
+  labels: 
+    app: apache
+  namespace: apache
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: apache-Deployment
+  minReplicas: 2
+  maxReplicas: 5
+  metrics:
+    type: resource
+    resource:
+      name: CPU 
+      target:
+        type: Utilization
+        averageUtilization: 50
