@@ -6,7 +6,7 @@ metadata:
     app: apache
   namespace: apache
 spec:
-  type: ClusterIp
+  type: ClusterIP
   selector:
     app: apache
   ports:
